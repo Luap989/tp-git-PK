@@ -21,6 +21,7 @@ jobs:
 
     - name: Execute unit test
       run: |
+      pytest
     - name: Analysing the code with pylint 
       run: |
         pylint $(git ls-files '*.py')
